@@ -78,8 +78,16 @@ function enviarParaWhatsapp() {
 }
 
 
+
   const mensagem = `Tempos registrados:%0A${tempos}%0A%0ATotal: ${total}`;
   const url = `https://wa.me/${numero}?text=${mensagem}`;
   window.open(url, '_blank');
+}
+
+
+function resetarTodos() {
+  for (let i = 0; i < timers.length; i++) {
+    resetTimer(i);
+  }
 }
 
