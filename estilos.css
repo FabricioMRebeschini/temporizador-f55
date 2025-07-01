@@ -1,0 +1,122 @@
+    * {
+    box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #e6f0fa;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        overflow-y: auto;
+        background-image: url('CopilotImage.png'); 
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        }
+
+        h1 {
+        margin-top: 30px;
+        text-align: center;
+        font-size: 2em;
+        color: whitesmoke;
+        }
+    .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 700px;
+    width: 100%;
+    padding: 20px;
+    }
+    .cronometro {
+    background: #fff;
+    border: 1px solid #b3d1f0;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    input[type="text"] {
+    font-size: 1.2em;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #f7fbff;
+    border: 1px solid #a4c8f0;
+    border-radius: 5px;
+    }
+    .botoes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+    }
+    .botoes button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    }
+    .botoes button:first-child {
+    background-color: #3399ff;
+    color: white;
+    }
+    .botoes button.zerar {
+    background-color: #f44336;
+    color: white;
+    }
+    .total-box {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.2em;
+    background: #fff;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    }
+    #totalGeral {
+    font-size: 1.4em;
+    margin-top: 5px;
+    color: #1d6ebf;
+    }
+
+
+    .whatsapp-section {
+    margin: 20px 0;
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+    #numeroDestino {
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    }
+    button.whatsapp {
+    background-color: #015c22;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 12px;
+    cursor: pointer;
+    }
+    button.whatsapp:hover {
+    background-color: #1ebe5d;
+    }
+
+    @media (max-width: 600px) {
+    .container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    }

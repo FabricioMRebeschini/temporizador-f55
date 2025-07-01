@@ -1,0 +1,58 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temporizador F55</title>
+    <link rel="stylesheet" href="estilos.css" />
+    </head>
+    <body>
+    <h1>Temporizador F-55</h1>
+
+    <div class="container">
+        <div class="cronometro">
+        <input type="text" id="display1" value="00:00:00" readonly />
+        <div class="botoes">
+            <button onclick="toggleTimer(0)">Abastecimento</button>
+            <button class="zerar" onclick="resetTimer(0)">Zerar</button>
+        </div>
+        </div>
+
+        <div class="cronometro">
+        <input type="text" id="display2" value="00:00:00" readonly />
+        <div class="botoes">
+            <button onclick="toggleTimer(1)">Deslocamento cheio</button>
+            <button class="zerar" onclick="resetTimer(1)">Zerar</button>
+        </div>
+        </div>
+
+        <div class="cronometro">
+        <input type="text" id="display3" value="00:00:00" readonly />
+        <div class="botoes">
+            <button onclick="toggleTimer(2)">Aplicação</button>
+            <button class="zerar" onclick="resetTimer(2)">Zerar</button>
+        </div>
+        </div>
+
+        <div class="cronometro">
+        <input type="text" id="display4" value="00:00:00" readonly />
+        <div class="botoes">
+            <button onclick="toggleTimer(3)">Deslocamento vazio</button>
+            <button class="zerar" onclick="resetTimer(3)">Zerar</button>
+        </div>
+        </div>
+    </div>
+    <div class="whatsapp-section">
+    <input id="numeroDestino" type="tel" value="5567" placeholder="5567XXXXXXXXX" />
+    <button class="whatsapp" onclick="enviarParaWhatsapp()">Enviar tempos via WhatsApp</button>
+    </div>
+
+
+    <div class="total-box">
+        <strong>Total acumulado:</strong>
+        <div id="totalGeral">00:00:00</div>
+    </div>
+
+    <script src="temporizador.js"></script>
+    </body>
+    </html>
